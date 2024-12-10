@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        .nav-container{
+            background-color: black;
+            color: white;
+            display: grid;
+            grid-template-columns: auto 30%;
+            height: 50px;
+            padding-top: 25px;
+        }
+        .left-nav{
+            font-size: x-large;
+            padding-left: 20px;
+        }
+        .right-nav{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .right-icon{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+        
+        @media (max-width:768px){
+            .right-nav{
+                display: none;
+            }
+        }
+        @media (min-width:768px){
+            .right-icon{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="left-nav">Logo</div>
+        
+        <div class="right-nav"> 
+            <div>Home</div>
+            <div>About</div>
+            <div>Services</div>
+            <div>Contact</div>
+        </div>
+        <div class="right-icon">
+            <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+        </div>
+    </div>
+    
+</body>
+</html>
